@@ -10,7 +10,7 @@ The modifications done are as follows:
 
 The experiment is done on AWS Sagemaker. The development environment is provided. The code should also run properly on Udacity workspace. 
 
-The path to Unity environment should be changed to the appropriate path:
+The path to Unity environment should be changed to the appropriate path, cell number 4,
 i.e.:
 
 > env = UnityEnvironment(file_name='./data/Reacher_Linux_NoVis//Reacher.x86_64')
@@ -18,6 +18,12 @@ i.e.:
 # Learning Algorithm:
 
 ### The learning algorithm
+
+The goal of DDPG an off-policy algorithm is to learn from continuous action spaces.
+It is a kind of Actor-Critic network reinforcement learning. The basic idea is that there are 2 networks. The Actor decides which actions to take. The critic tells how good the actions and how to learn given the staes and actions.
+
+Bellow is the original algorithm:
+
 
 <img src="ddpg_algorithm.png"  width="60%" height="30%">
 
