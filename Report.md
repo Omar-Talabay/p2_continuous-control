@@ -25,8 +25,10 @@ LR_CRITIC = 1e-3        # learning rate of the critic
 WEIGHT_DECAY = 0        # L2 weight decay
 
 ### Model architectures:
-** Actor network's inputs are the state size and its output is the action size. There are 2 hidden layers each of which of size 256.
-** 
+
+* Actor network's inputs are the state size and its output is the action size. There are 2 hidden layers each of which of size 256.
+
+* Critic network:  It takes the states and action as input, its output is predicting a reward score. Two hiddent layers of size 256 are used.
 
 # Plot of Rewards:
 <img src="ddpg_plot.png"  width="60%" height="30%">
