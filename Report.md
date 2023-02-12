@@ -1,5 +1,5 @@
 # Description of the implementation
-A modified version of Deep Deterministic Policy Gradients (DDPG) algorithm provided by Udacity excerise is being adapted and modified.
+A modified version of Deep Deterministic Policy Gradients (DDPG) algorithm provided by [Udacity excerise](https://github.com/udacity/deep-reinforcement-learning/tree/master/ddpg-bipedal) is being adapted and modified.
 
 The modifications done are as follows:
 1. adapt the DDPG to work with Unity environment.
@@ -17,11 +17,17 @@ The modifications done are as follows:
 ### Hyperparameters:
 
 BUFFER_SIZE = int(1e5)  # replay buffer size
+
 BATCH_SIZE = 128         # minibatch size
+
 GAMMA = 0.99            # discount factor
+
 TAU = 1e-3              # for soft update of target parameters
+
 LR_ACTOR = 1e-3         # learning rate of the actor 
+
 LR_CRITIC = 1e-3        # learning rate of the critic
+
 WEIGHT_DECAY = 0        # L2 weight decay
 
 ### Model architectures:
@@ -34,13 +40,6 @@ WEIGHT_DECAY = 0        # L2 weight decay
 <img src="ddpg_plot.png"  width="60%" height="30%">
 
 
-A plot of rewards per episode is included to illustrate that either:
-
-[version 1] the agent receives an average reward (over 100 episodes) of at least +30, or
-[version 2] the agent is able to receive an average reward (over 100 episodes, and over all 20 agents) of at least +30.
-The submission reports the number of episodes needed to solve the environment.
-
-
-
 # Ideas for Future Work:
-1. 
+1. Experimenting more with the network, i.e, the effect of using batch normalization.
+2. Exploring a new teqniaues such as [Distributed Distributional Deterministic Policy Gradients](https://openreview.net/forum?id=SyZipzbCb)
