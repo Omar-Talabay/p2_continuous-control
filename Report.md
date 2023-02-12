@@ -12,7 +12,8 @@ The experiment is done on AWS Sagemaker. The development environment is provided
 
 The path to Unity environment should be changed to the appropriate path:
 i.e.:
-{env = UnityEnvironment(file_name='./data/Reacher_Linux_NoVis//Reacher.x86_64')}
+
+> env = UnityEnvironment(file_name='./data/Reacher_Linux_NoVis//Reacher.x86_64')
 
 # Learning Algorithm:
 
