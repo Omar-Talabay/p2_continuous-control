@@ -14,6 +14,7 @@ The modifications done are as follows:
 
 <img src="ddpg_algorithm.png"  width="60%" height="30%">
 
+[Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971)
 
 ### Hyperparameters:
 
