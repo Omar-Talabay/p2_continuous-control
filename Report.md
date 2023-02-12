@@ -4,9 +4,15 @@ A modified version of Deep Deterministic Policy Gradients (DDPG) algorithm provi
 The modifications done are as follows:
 1. adapt the DDPG to work with Unity environment.
 2. to make the code run with more than 1 agent.
-3. gradient clippings to critiqie local, "ddpg_agent.py"
-4. change of neural network archticture.
-5. The number of updates in each step is changed to be 1 every 20 times. "ddpg_agent.py" step function.
+3. gradient clippings to critiqie local, "ddpg_agent.py" to stabilize training.
+4. change of neural network archticture to make it smaller than the one provided in the excersize to speed up the performance. 
+5. The number of updates in each step is changed to be 1 every 20 times. "ddpg_agent.py" step function to speed up training.
+
+The experiment is done on AWS Sagemaker. The development environment is provided. The code should also run properly on Udacity workspace. 
+
+The path to Unity environment should be changed to the appropriate path:
+i.e.:
+{env = UnityEnvironment(file_name='./data/Reacher_Linux_NoVis//Reacher.x86_64')}
 
 # Learning Algorithm:
 
