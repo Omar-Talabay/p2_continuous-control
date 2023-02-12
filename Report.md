@@ -12,6 +12,7 @@ The modifications done are as follows:
 
 ### The learning algorithm
 
+<img src="ddpg_algorithm.png"  width="60%" height="30%">
 
 
 ### Hyperparameters:
